@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap solux</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <!-- navbar 만들기-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Solux Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Intro <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flexible</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">About</button>
+          </form>
+        </div>
+      </nav>
+    <section id="one">
+        <div>
+            <h1>Solux</h1>
+            <h4>Cheer up</h4>
+        </div>
+        <hr />
+        <!-- button 만들기 -->
+    </section>
+
+
+    <section id="two">
+        <h2>Flexible Layouts</h2>
+        <hr>
+        <div>
+            <i class="fas fa-desktop" style="font-size: 60pt;"></i>
+            <h3>Responsive</h3>
+            <p>Your site looks good everywhere</p>
+        </div>
+        <div>
+            <i class="fab fa-sass" style="font-size: 60pt;"></i>
+            <h3>Customizable</h3>
+            <p>Easy to theme and customize with SASS</p>
+        </div>
+        <div>
+            <i class="far fa-star" style="font-size: 60pt;"></i>
+            <h3>Consistent</h3>
+            <p>A mature, well-tested, stable codebase</p>
+        </div>
+    </section>
+
+
+    <section id="three">
+        <div id="pic1">
+            <img src="https://picsum.photos/id/234/320/300">
+        </div>
+        <div id="pic2">
+            <img src="https://picsum.photos/id/931/320/300">
+        </div>
+        <div id="pic3">
+            <img src="https://picsum.photos/id/654/320/300">
+        </div>
+        <div id="pic4">
+            <img src="https://picsum.photos/id/341/320/300">
+        </div>
+        <div id="pic5">
+            <img src="https://picsum.photos/id/322/320/300">
+        </div>
+        <div id="pic6">
+            <img src="https://picsum.photos/id/543/320/300">
+        </div>
+    </section>
+
+
+    <section id="four">
+        <h2 class="margin-top-0 wow fadeIn text-primary">Get in Touch</h2>
+        <hr>
+        <p class="text-light">We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>             
+        <div>
+            <input type="text" class="form-control" placeholder="Name">
+            <input type="text" class="form-control" placeholder="Email">
+            <input type="text" class="form-control" placeholder="Phone">
+            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nice Job!</h5>
+          You clicked the button, but it doesn't actually go anywhere.
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </section>
+
+
+    <div class="aboutModal">
+        <!-- modal 내용 -->
+    </div>
+
+    <div class="aboutModal">
+        <!-- alert modal 내용 -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
