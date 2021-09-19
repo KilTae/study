@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- navbar 만들기-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar-scroll"class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Solux Bootstrap</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,20 +24,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Intro <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#one">Intro <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Flexible</a>
+              <a class="nav-link" href="#two">Flexible</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#three">Gallery</a>
               </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contact
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#four">Here</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
@@ -46,99 +46,134 @@
 
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">About</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#aboutModal">About</button>
           </form>
         </div>
+      
       </nav>
-    <section id="one">
-        <div>
-            <h1>Solux</h1>
-            <h4>Cheer up</h4>
+      <div class="modal" id="aboutModal" tabindex="-1">
+        <div class="modal-dialog ">
+          <div class="modal-content bg-secondary">
+            <div class="modal-title text-center text-white"><h6>솔룩스</h6></div>
+    
+            <div class="modal-body text-center">
+              <h5 class="text-white">파이팅!</h5>
+              <p class="text-white">저는 18학점 듣습니다.. 휴학하고싶네요..!!</p>
+            
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="tooltip-test" title="Tooltip">Download</a>
+              <button type="button" class="btn btn-primary text-white" data-dismiss="modal">OK</button>
+            </div>
+          </div>
         </div>
-        <hr />
-        <!-- button 만들기 -->
+      </div>
+<div  data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
+    <section id="one">
+      <div class="text-center mw-100 h-100">
+        <h1 class="display-1 pt-5">Solux</h1>
+        <p3 class="display-4">Cheer up</p3>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg" href="#two" role="button" id="gogo">Get Started</a>
+      </div>
+
     </section>
 
-
+  <div class="bg-dark text-white">
     <section id="two">
-        <h2>Flexible Layouts</h2>
+      <h2 class="text-primary text-center m-5">Flexible Layouts</h2>
+      <div class="row text-center mb-5">
         <hr>
-        <div>
+        <div class="col-12 col-sm-4 text-center">
             <i class="fas fa-desktop" style="font-size: 60pt;"></i>
             <h3>Responsive</h3>
             <p>Your site looks good everywhere</p>
         </div>
-        <div>
+        <div class="col-12 col-sm-4 text-center">
             <i class="fab fa-sass" style="font-size: 60pt;"></i>
             <h3>Customizable</h3>
             <p>Easy to theme and customize with SASS</p>
         </div>
-        <div>
+        <div class="col-12 col-sm-4 text-center">
             <i class="far fa-star" style="font-size: 60pt;"></i>
             <h3>Consistent</h3>
             <p>A mature, well-tested, stable codebase</p>
         </div>
+      </div>
     </section>
 
 
-    <section id="three">
-        <div id="pic1">
+    <i id="three">
+      <div class="row ml-5 mb-15">
+        <hr />
+        <div class="col-12 col-sm-6 col-md-4" id="pic1">
             <img src="https://picsum.photos/id/234/320/300">
         </div>
-        <div id="pic2">
+        <div class="col-12 col-sm-6 col-md-4" id="pic2">
             <img src="https://picsum.photos/id/931/320/300">
         </div>
-        <div id="pic3">
+        <div class="col-12 col-sm-6 col-md-4" id="pic3">
             <img src="https://picsum.photos/id/654/320/300">
-        </div>
-        <div id="pic4">
+        </div>        
+      
+      
+        <div class="col-12 col-sm-6 col-md-4" id="pic4">
             <img src="https://picsum.photos/id/341/320/300">
         </div>
-        <div id="pic5">
+        <div class="col-12 col-sm-6 col-md-4" id="pic5">
             <img src="https://picsum.photos/id/322/320/300">
         </div>
-        <div id="pic6">
+        <div class="col-12 col-sm-6 col-md-4" id="pic6">
             <img src="https://picsum.photos/id/543/320/300">
         </div>
+      
     </section>
-
+  </div>
 
     <section id="four">
-        <h2 class="margin-top-0 wow fadeIn text-primary">Get in Touch</h2>
+      <div class="bg-secondary">
+        <h2 class="margin-top-0 wow fadeIn text-primary text-center">Get in Touch</h2>
         <hr>
-        <p class="text-light">We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>             
-        <div>
+        <p class="text-light text-center">We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>             
+        
+        
+        <div class="row text-center px-5">
+          <div class="col-12 col-md-4 mb-3">
             <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
             <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
             <input type="text" class="form-control" placeholder="Phone">
-            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+          </div>
+        
+            <textarea class="form-control mb-3 mx-3" rows="9" placeholder="Your message here.."></textarea>
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
+            <button type="button" class="btn btn-primary mx-3 p-3 px-4 btn-lg btn-block " data-toggle="modal" data-target="#exampleModal">
+              Send
+            </button>
+          </div>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal" id="exampleModal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nice Job!</h5>
-          You clicked the button, but it doesn't actually go anywhere.
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    
+        <div class="modal-body text-center">
+          <h6 class="text-dark">Nice Job!</h6>
+          <p class="text-dark">You clicked the button, 
+            but it doesn't actually go anywhere.</p>
+          <a href="#" class="tooltip-test" title="Tooltip">Learn more at bootstrap</a>
         </div>
-
         <div class="modal-footer">
-
-          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+          <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">OK</button>
         </div>
       </div>
     </div>
   </div>
-        </div>
     </section>
-
+  </div>
 
     <div class="aboutModal">
         <!-- modal 내용 -->
